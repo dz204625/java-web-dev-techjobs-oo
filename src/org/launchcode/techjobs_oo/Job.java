@@ -33,9 +33,9 @@ public class Job {
 
     @Override
     public String toString() {
-        /*if(name == "" && employer.getValue() == "" && location.getValue() == "" && positionType.getValue() == "" && coreCompetency.getValue() == ""){
-            return  "OOPS! This job does not seem to exist.”;
-        }*/
+        if(name.equals("") && employer.getValue().equals("") && location.getValue().equals("") && positionType.getValue().equals("") && coreCompetency.getValue().equals("")){
+            return  "OOPS! This job does not seem to exist.";
+        }
         if(name.equals("")){
            name = "Data not available" ;
        }
